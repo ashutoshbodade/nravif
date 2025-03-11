@@ -1,0 +1,35 @@
+{
+  "name": "nravif",
+  "type": "module",
+  "version": "1.2.0",
+  "description": "A Node.js AVIF conversion library using Rust Neon bindings",
+  "source": "./src/index.ts",
+  "main": "./dist/index.cjs",     
+  "module": "./dist/index.module.js", 
+  "unpkg": "./dist/index.umd.js", 
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "require": "./dist/index.cjs",   
+    "default": "./dist/index.modern.js"
+  },
+  "scripts": {
+    "build": "microbundle && cp -r bindings dist/",
+    "prepublishOnly": "npm run build"
+  },
+  "files": ["dist", "bindings"],
+  "devDependencies": {
+    "microbundle": "^0.15.0",
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  },
+  "keywords": ["avif", "image", "compression", "neon", "rust", "native"],
+  "author": "Ashutosh Bodade",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashutoshbodade/nravif"
+  }
+}
