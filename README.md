@@ -2,6 +2,8 @@
 
 [![npm version](https://img.shields.io/npm/v/nravif)](https://www.npmjs.com/package/nravif)
 
+**Convert images to AVIF super fast and make friends with Rust along the way! 🚀🦀**
+
 **High-performance AVIF converter** powered by Rust's [ravif](https://crates.io/crates/ravif), 
 offering native-speed conversions with minimal memory footprint. Outperforms JavaScript-based solutions like Sharp by 3-5x in benchmark tests.
 
